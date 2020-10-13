@@ -27,7 +27,7 @@ const OrderScreen = ({ match,history }) => {
 
 
     const orderDeliver = useSelector(state => state.orderDeliver)
-    const {loadisuccess:successDeliver } = orderDeliver
+    const {success:successDeliver } = orderDeliver
 
 
     useEffect(() => {

@@ -54,7 +54,7 @@ const ProductEditScreen = ({ match, history }) => {
             }
 
       
-    }, [dispatch,history,productId,product,successUpdate])
+    }, [dispatch,history,productId,product,successUpdate,match])
 
 
     const uploadHandler=async e=>{
