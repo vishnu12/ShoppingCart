@@ -34,14 +34,14 @@ const ProfileScreen = ({location,history}) => {
        if(!user){
           history.push('/login')
        }
-       else if(!(userInfo && userInfo.name && userInfo.email)){
+       else if(!(userInfo && userInfo.name && userInfo.email)||!orders){
         dispatch(getUserDetail('profile'))
         dispatch(listMyOrders())
        }else{
         setName(userInfo.name)
         setEmail(userInfo.email)
        }
-    },[dispatch,history,userInfo,user])
+    },[dispatch,history,userInfo,user,orders])
      
    
   
